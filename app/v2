@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StreamLine v2</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #e7f5ff;
+            padding: 20px;
+        }
+        .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 { color: #0077b6; }
+        b { color: #005f8a; }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>StreamLine - v2 🚀</h2>
+
+    <p><b>Server IP:</b>
+        <?php echo $_SERVER['SERVER_ADDR']; ?>
+    </p>
+
+    <p><b>Client IP:</b>
+        <?php echo $_SERVER['REMOTE_ADDR']; ?>
+    </p>
+
+    <p><b>Time:</b>
+        <?php echo date("H:i:s"); ?>
+    </p>
+</div>
+
+</body>
+</html>
